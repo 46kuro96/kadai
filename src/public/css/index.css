@@ -1,0 +1,184 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.form__label--required {
+    color: #ff0000;
+}
+
+.form__error {
+    height: 20px;
+    text-align: center;
+    color: #ff0000;
+    font-size: 12px;
+}
+
+.form__input--name input{
+    width: 200px;
+    height: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: #f4f4f2;
+    border: none;
+}
+
+.form__input--gender {
+    margin-right: 155px;
+}
+
+.form__input--gender input {
+    margin-left: 45px;
+}
+
+.form__input--email input {
+    width: 440px;
+    height: 30px;
+    padding: 10px;
+    background-color: #f4f4f2;
+    border: none;
+}
+
+.form__input--tel input {
+    width: 135px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f4f4f2;
+    border: none;
+}
+
+.form__input--address input {
+    width: 440px;
+    height: 30px;
+    padding: 10px;
+    background-color: #f4f4f2;
+    border: none;
+}
+
+.form__input--building input {
+    width: 440px;
+    height: 30px;
+    padding: 10px;
+    background-color: #f4f4f2;
+    border: none;
+}
+
+.form__input--select {
+    margin-right: 240px;
+}
+
+.form__input--select select {
+    width:240px;
+    height: 30px;
+    padding: 5px;
+    background-color: #f4f4f2;
+    border: none;
+}
+
+.form__input--textarea  textarea{
+    width: 440px;
+    height: 100px;
+    padding: 5px;
+    background-color: #f4f4f2;
+    border: none;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.form__button-submit {
+    background-color: #8d7b6c;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* selectの矢印変更 */
+
+.form__input--select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.form__input--select select {
+    appearance: none;
+    /* 矢印を消す */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    background-color: #f4f4f2;
+    border: none;
+}
+
+/* カスタム矢印を右に追加 */
+.form__input--select::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    width: 20px;
+    transform: translateY(-10%,);
+    pointer-events: none;
+    /* クリックを通過させる */
+}
+
+/* 隠す でも画面リーダーには残す */
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+/* 外側の円 */
+.radio-style {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    margin-right: 3px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+    transition: all 0.2s ease;
+}
+
+/* チェック状態の見た目（中の●） */
+.custom-radio input[type="radio"]:checked+.radio-style::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #8d7b6c;
+    /* ここで色を変えられる */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}

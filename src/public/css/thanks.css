@@ -1,0 +1,46 @@
+body {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    margin: 0 auto;
+    max-width: 1230px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-text {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw;
+    color: rgba(0,0,0,0.05);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+}
+
+.thanks__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thanks__heading {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #8d7b6c;
+}
+
+.home__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.home__button-submit {
+    background-color:#8d7b6c;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+}
